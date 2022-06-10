@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url('images/theater.jpg');
+}
+
+header {
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+
+.main-title {
+  margin-bottom: 50px;
+}
+
+.today {
+  margin-bottom: 10px;
+}
+
+#date {
+  font-size: 20px;
+  color: #ead21f;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 80px;
+  list-style-type: none;
+}
+
+.movies img {
+  width: 200px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.movie-container {
+  text-align: center;
+}
+
+.title {
+  color: #fff;
+  font-size: 18px;
+}
+
+.pick {
+  text-align: center;
+  padding: 20px;
+}
+
+.prices {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid red;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+
+.image {
+  text-align: center;
+}
+
+.selected img {
+  width: 200px;
+  border: 5px solid purple;
+}
+
+.selected select {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.brigade,
+.blank,
+.pee,
+.air,
+.meteor,
+.johnny,
+.bud,
+.green,
+.brink,
+.first,
+.motor,
+.phantom {
+  position: relative;
+}
+
+.times-one,
+.times-two,
+.times-three,
+.times-four,
+.times-five,
+.times-six,
+.times-seven,
+.times-eight,
+.times-nine,
+.times-ten,
+.times-eleven,
+.times-twelve {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  list-style-type: none;
+  color: #fff;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.times-one li,
+.times-two li,
+.times-three li,
+.times-four li,
+.times-five li,
+.times-six li,
+.times-seven li,
+.times-eight li,
+.times-nine li,
+.times-ten li,
+.times-eleven li,
+.times-twelve li {
+  padding: 18px 0;
+}
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.seat {
+  background-color: #444451;
+  height: 14px;
+  width: 14px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.seat.selected {
+  background-color: #6feaf6;
+}
+
+.seat.occupied {
+  background-color: #fff;
+}
+
+.seat:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin-left: 2px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen {
+  background-color: #fff;
+  height: 70px;
+  width: 40%;
+  margin: 15px auto;
+  transform: rotateX(-20deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+p.text {
+  margin: 5px 0;
+  color: #fff;
+  text-align: center;
+}
+
+p.text span {
+  color: #6feaf6;
+}
+
+.show {
+  display: none;
+}
+
+.show.all {
+  display: block;
+}
+
+.button {
+  text-align: center;
+  margin: 20px;
+}
+
+.purchase {
+  padding: 10px 50px;
+  background-color: #6feaf6;
+  border-radius: 10px;
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.purchase:hover {
+  transition: 1s linear ease;
+  background-color: black;
+  color: #fff;
+}

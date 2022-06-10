@@ -1,0 +1,260 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>The Classics Cinema</title>
+</head>
+<body>
+  <header>
+    <h1 class="main-title">The Classics Cinema</h1>
+    <h3 class="today">Movies Showing Today:</h3>
+    <p id="date"></p>
+  </header> 
+
+  <div>
+    <ul class="movies">
+      <li class="brigade">
+        <img class="movie one" src="images/movie-1.jpeg" alt="The Paper Brigade">
+        <button class="prices">View Prices</button>
+        <ul class="times-one">
+          <li>9:00 AM</li>
+          <li>12:00 PM</li>
+          <li>3:00 PM</li>
+          <li>6:00 PM</li>
+          <li>8:00 PM</li>
+        </ul>
+      </li>
+      <li class="blank">
+        <img class="movie two" src="images/movie-2.jpg" alt="Blank Check">
+        <button class="prices">View Prices</button>
+        <ul class="times-two">
+          <li>9:00 AM</li>
+          <li>12:00 PM</li>
+          <li>3:00 PM</li>
+          <li>6:00 PM</li>
+          <li>8:00 PM</li>
+        </ul>
+      </li>
+      <li class="pee">
+        <img class="movie three" src="images/movie-3.jpeg" alt="Pee Wee's Big Adventure">
+        <button class="prices">View Prices</button>
+        <ul class="times-three">
+          <li>9:00 AM</li>
+          <li>12:00 PM</li>
+          <li>3:00 PM</li>
+          <li>6:00 PM</li>
+          <li>8:00 PM</li>
+        </ul>
+      </li>
+      <li class="air">
+        <img class="movie four" src="images/movie-4.jpg" alt="The Air Up There">
+        <button class="prices">View Prices</button>
+        <ul class="times-four">
+          <li>9:00 AM</li>
+          <li>12:00 PM</li>
+          <li>3:00 PM</li>
+          <li>6:00 PM</li>
+          <li>8:00 PM</li>
+        </ul>
+      </li>
+      <li class="meteor">
+        <img class="movie five" src="images/movie-5.jpeg" alt="Meteor Man">
+        <button class="prices">View Prices</button>
+        <ul class="times-five">
+          <li>9:00 AM</li>
+          <li>12:00 PM</li>
+          <li>3:00 PM</li>
+          <li>6:00 PM</li>
+          <li>8:00 PM</li>
+        </ul>
+      </li>
+      <li class="johnny">
+        <img class="movie six" src="images/movie-6.jpg" alt="Johnny Tsunami">
+        <button class="prices">View Prices</button>
+        <ul class="times-six">
+          <li>9:00 AM</li>
+          <li>12:00 PM</li>
+          <li>3:00 PM</li>
+          <li>6:00 PM</li>
+          <li>8:00 PM</li>
+        </ul>
+      </li>
+      <li class="bud">
+        <img class="movie seven" src="images/movie-7.jpg" alt="Air Bud">
+        <button class="prices">View Prices</button>
+        <ul class="times-seven">
+          <li>9:00 AM</li>
+          <li>12:00 PM</li>
+          <li>3:00 PM</li>
+          <li>6:00 PM</li>
+          <li>8:00 PM</li>
+        </ul>
+      </li>
+      <li class="green">
+        <img class="movie eight" src="images/movie-8.jpg" alt="The Big Green">
+        <button class="prices">View Prices</button>
+        <ul class="times-eight">
+          <li>9:00 AM</li>
+          <li>12:00 PM</li>
+          <li>3:00 PM</li>
+          <li>6:00 PM</li>
+          <li>8:00 PM</li>
+        </ul>
+      </li>
+      <li class="brink">
+        <img class="movie nine" src="images/movie-9.jpeg" alt="Brink">
+        <button class="prices">View Prices</button>
+        <ul class="times-nine">
+          <li>9:00 AM</li>
+          <li>12:00 PM</li>
+          <li>3:00 PM</li>
+          <li>6:00 PM</li>
+          <li>8:00 PM</li>
+        </ul>
+      </li>
+      <li class="first">
+        <img class="movie ten" src="images/movie-10.jpeg" alt="First Kid">
+        <button class="prices">View Prices</button>
+        <ul class="times-ten">
+          <li>9:00 AM</li>
+          <li>12:00 PM</li>
+          <li>3:00 PM</li>
+          <li>6:00 PM</li>
+          <li>8:00 PM</li>
+        </ul>
+      </li>
+      <li class="motor">
+        <img class="movie eleven" src="images/movie-11.jpg" alt="MotorCrossed">
+        <button class="prices">View Prices</button>
+        <ul class="times-eleven">
+          <li>9:00 AM</li>
+          <li>12:00 PM</li>
+          <li>3:00 PM</li>
+          <li>6:00 PM</li>
+          <li>8:00 PM</li>
+        </ul>
+      </li>
+      <li class="phantom">
+        <img class="movie twelve" src="images/movie-12.jpeg" alt="Phantom of the Megaplex">
+        <button class="prices">View Prices</button>
+        <ul class="times-twelve">
+          <li>9:00 AM</li>
+          <li>12:00 PM</li>
+          <li>3:00 PM</li>
+          <li>6:00 PM</li>
+          <li>8:00 PM</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class='image' id='image'>
+    <p class="selected" id="selected"></p>
+  </div>
+  <div class="show">
+    <div class="movie-container">
+      <div class="pick">
+        <label class='title'>Select a Time:</label>
+        <select id="movie">
+          <option value="4">9:00 AM ($4)</option>
+          <option value="6">12:00 PM ($6)</option>
+          <option value="6">3:00 PM ($6)</option>
+          <option value="7">6:00 PM ($7)</option>
+          <option value="8">8:00 PM ($8)</option>
+        </select>
+      </div>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>N/A</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+
+    <p class="text">You have selected <span id="count">0</span> seats for a price of $<span id="total">0</span></p>
+    <div class='button'>
+      <button class='purchase'>Purchase Tickets</button>
+    </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <script src="movies.js"></script>
+</body>
+</html>
